@@ -38,6 +38,7 @@ export default function PaginaInicial() {
 
   return (
     <>
+     
       <Box
         styleSheet={{
           display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -91,19 +92,8 @@ export default function PaginaInicial() {
                 console.log("usuário digitou", event.target.value );
                 //Onde está o valor
                 const valor = event.target.value;
-                let novoValor = String;
                 //Trocar o valor da variável através do React
-                // if(valor.length < 3){
-                //   console.log(TextField.value)
-                //   console.log("precisa ter pelo menos 3 catacteres" ); 
-                // }else{
-                //   novoValor = valor;
-                // }
-                setUsername(novoValor); 
-
-                
-                
-                
+                setUsername(valor);
               }}  
               fullWidth
               textFieldColors={{
